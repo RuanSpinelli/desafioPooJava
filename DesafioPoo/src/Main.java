@@ -27,14 +27,25 @@ public class Main {
 
 
         System.out.println("Conteúdos inscritos(Camila): "+ devCamila.getConteudosInscrito());
+        devCamila.progredir();
+        devCamila.progredir();
+        System.out.println("Conteúdos inscritos(Camila): "+ devCamila.getConteudosInscrito());
+        System.out.println("Conteúdos concluídos(Camila): "+ devCamila.getConteudosConcluidos());
+        System.out.println("XP: "+ devCamila.calcularTotalXp());
 
+
+        System.out.println("=-".repeat(20)); // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
         Dev devJoao = new Dev();
         devJoao.setNome("João");
         devJoao.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos(João): "+ devJoao.getConteudosInscrito());
-
-
+        devJoao.progredir();
+        devJoao.progredir();
+        devJoao.progredir();
+        System.out.println("Conteúdos inscritos(João): "+ devJoao.getConteudosInscrito());
+        System.out.println("Conteúdos concluidos(João): "+ devJoao.getConteudosConcluidos());
+        System.out.println("XP: "+ devJoao.calcularTotalXp());
 
     }
 }
